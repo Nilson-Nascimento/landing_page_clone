@@ -1,5 +1,58 @@
-$bg:rgb(0, 140, 255);
+@use 'colors';
+@use 'hero';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// Font Sizes texts
+@mixin text($fontSize:12px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color:  colors.$text-color-A;
+}
+
+.text--small{
+    @include text() //12px
+}
+
+.text--medium{
+    @include text(16px)
+}
+
+.text--big{
+    @include text(18px)
+}
+
+// Font Sizes Tiltes
+
+@mixin title($fontSize:28px){
+    @include text($fontSize);
+    color: colors.$text-color-B;
+}
+
+.title--small{
+    @include title()
+}
+
+.title--medium{
+    @include title(40px)
+}
+
+.title--big{
+    @include title(44px)
+}
+
+.link-text{
+    @include text(18px);
+    color:  colors.$text-color-B;
+    text-decoration: underline;
+}
 
 body{
-    background-color:$bg;
+    background-color: colors.$bg-color;
 }
