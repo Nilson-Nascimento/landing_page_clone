@@ -1,6 +1,17 @@
 @use 'colors';
 @use 'hero';
 
+@font-face {
+    font-family: Avenir;
+    src: url(../../asset/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../asset/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
 
 *{
     margin: 0;
@@ -14,6 +25,7 @@
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color:  colors.$text-color-A;
+    font-family: none;
 }
 
 .text--small{
@@ -55,4 +67,6 @@
 
 body{
     background-color: colors.$bg-color;
+    font-family: Avenir;
+    // color: colors.$bg-color-bt;
 }
