@@ -27,7 +27,7 @@
 
             &:last-child{
                 margin-top: 60px;
-                background-color: aqua; //Seleciona a última tag p dentro de um container
+                // background-color: aqua; //Seleciona a última tag p dentro de um container
             }
         }
 
@@ -48,7 +48,7 @@
                     width: 100%;
                     height: 60px;
                     font-size: 18px;
-                    color: colors.$text-color-B;
+                    color: colors.$text-color-b;
                     background-color: colors.$bg-color-bt;
                     text-transform: uppercase;
                     border-radius: 4px;
