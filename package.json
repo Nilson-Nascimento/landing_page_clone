@@ -2,29 +2,23 @@
   "name": "clone_disneyplus",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "gulp watch",
-    "build": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [],
+  "homepage": "https://github.com/Nilson-Nascimento/clone_disneyplus#readme",
+  "bugs": {
+    "url": "https://github.com/Nilson-Nascimento/clone_disneyplus/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nilson-Nascimento/clone_disneyplus.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Nilson-Nascimento/clone_disneyplus/issues"
-  },
-  "homepage": "https://github.com/Nilson-Nascimento/clone_disneyplus#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^6.0.1",
-    "sass": "^1.86.2"
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "ansi-colors": "^1.1.0",
@@ -155,5 +149,11 @@
     "y18n": "^5.0.8",
     "yargs": "^16.2.0",
     "yargs-parser": "^20.2.9"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.86.2"
   }
 }
