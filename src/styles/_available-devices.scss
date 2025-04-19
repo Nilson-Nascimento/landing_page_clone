@@ -1,0 +1,39 @@
+.available-devices{
+    // background-color: aqua;
+    padding: 5.6vw;
+    text-align: center;
+
+    h2{
+        margin-bottom: 24px;
+    }
+
+    &__list{
+        // background-color: blue;
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+
+        &__item{
+            text-align: center;
+
+            h4{
+                margin-top: 20px;
+                margin-bottom: 24px;
+            }
+            img{
+                max-width: 100%;
+
+            }
+            // background-color: blanchedalmond;
+
+            .text--medium{
+                li{
+                    list-style-type:none;
+                    text-transform: capitalize;
+                    // background-color: brown;
+
+                }
+            }
+        }
+    }
+}

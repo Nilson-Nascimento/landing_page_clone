@@ -1,0 +1,45 @@
+.faq{
+    padding: 5.6vw;
+    background-color: antiquewhite;
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__questions{
+        background-color: aqua;
+        &__item{
+            background-color:#13151d;
+            list-style-type: none;
+            margin-bottom: 16px;
+            &__question{
+                background-color: blueviolet;
+                color: #fff;
+                font-size: 20px;
+                padding: 24px;
+                display: block;
+                cursor: pointer;
+                position: relative;
+
+                &::after{
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 40px;
+                }
+            }
+            &__answer{
+                background-color: burlywood;
+                // padding: 24px;
+                height: 0;
+                overflow: hidden;
+
+            }
+
+            
+        }
+    }
+}
