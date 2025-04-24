@@ -1,18 +1,19 @@
 .faq{
     padding: 5.6vw;
-    background-color: antiquewhite;
+    // background-color: antiquewhite;
     h2{
         text-align: center;
         margin-bottom: 24px;
     }
     &__questions{
-        background-color: aqua;
+        // background-color: aqua;
         &__item{
             background-color:#13151d;
             list-style-type: none;
             margin-bottom: 16px;
+
             &__question{
-                background-color: blueviolet;
+                // background-color: blueviolet;
                 color: #fff;
                 font-size: 20px;
                 padding: 24px;
@@ -25,21 +26,32 @@
                     position: absolute;
                     top: 0;
                     right: 24px;
-                    height: 100px;
+                    height: 74.86px;
                     display: flex;
                     align-items: center;
                     font-size: 40px;
                 }
             }
             &__answer{
-                background-color: burlywood;
+                // background-color: rgb(135, 222, 155);
                 // padding: 24px;
                 height: 0;
                 overflow: hidden;
-
+                padding: 0 24px;
+                transition: height, 0.7s ease;
             }
 
-            
+            &--is-open{
+                list-style-type: none;
+                .faq__questions__item__question::after{
+                    content: '-';
+                }
+                .faq__questions__item__answer{
+                    height: auto;
+                    padding-bottom: 24px;
+                    transition: height, 0.7s ease;
+                }
+            }
         }
     }
 }
