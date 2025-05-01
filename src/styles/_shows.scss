@@ -3,11 +3,16 @@
 .show{
     padding: 2vw 5.6vw;
     min-height: 50vw;
+    
     &__list{
         margin-top: 44px;
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
         
         &--is-active{
             display:grid;
@@ -25,6 +30,13 @@
     &__tabs{
         display: flex;          
         justify-content: center;
+
+        @media (max-width: 768px) {
+            white-space: nowrap; // coloca todo o conteúdo na mesma linha
+            overflow-x: scroll; //cria uma rolagem
+            padding-left: 20px;
+        }
+
         &__button{
             color: colors.$text-color-b;
             font-size: 20px;
@@ -38,6 +50,10 @@
 
             &--is-active{
             border-color: colors.$text-color-b;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
             }
         }
     }
