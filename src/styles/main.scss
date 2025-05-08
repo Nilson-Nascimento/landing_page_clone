@@ -30,6 +30,13 @@
     list-style: none;
 }
 
+body{
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #c0c0c0;
+}
+
 
 // Font Sizes texts
 @mixin text($fontSize:12px){
