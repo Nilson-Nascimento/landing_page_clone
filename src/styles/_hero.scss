@@ -13,15 +13,15 @@
     padding: 75px calc(3.5vw + 24px) 0;
     display: flex;
     flex-direction: column;
-
+    
     @media (max-width: 768px) {
-      background-image: url(../images/hero_desktop.png) ;
-      padding-top: calc(50vw + 25px);
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin-top: -55px;  
+        background-image: url(../images/hero_desktop.png) ;
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -55px;  
     }
-
+    
     .button{
         margin-top: 2vw;
         margin-bottom: 8px;
@@ -30,11 +30,23 @@
         color: #040714;
         background-color: #02d6e8;
     }
-
+    
     &__content{
         // max-width: 640px;
         position: relative;
-
+        .opacity{
+            background-image: radial-gradient(farthest-side at 73% 21%,transparent,#1a1d29);
+            opacity: 0.5;
+            background-size: cover; //Ajusta/encaixa a imagem dentro do container
+            // background-image: url(https://placehold.jp/3d4070/ffffff/2160x1215.jpg?text=hero_Disney);
+            // background-color: rgb(255, 174, 0);
+            text-align: center;
+            /////////////////////////////////////////
+            position: relative;
+            padding: 75px calc(3.5vw + 24px) 0;
+            display: flex;
+            flex-direction: column;
+        }
         &__branding{
                 display: flex;
                 flex-wrap: wrap;
@@ -120,17 +132,26 @@
                     margin-bottom: 24px;
                 }
 
-                .text--medium{
-                    white-space: pre-line;
-                    background-color: aqua;
-                    display: block;
-                    margin-block-start: 1em;
-                    margin-block-end: 1em;
-                    margin-inline-start: 0px;
-                    margin-inline-end: 0px;
-                    unicode-bidi: isolate;
-                }
-
+                
+            }
+            .text--medium{
+                white-space: pre-line;
+                // background-color: aqua;
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                unicode-bidi: isolate;
+                max-width: 875px;
+                width: 673px;
+                height: 75px;
+                font-size:18px ;
+                line-height: 1.4;
+                letter-spacing: 0;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: justify;
             }
             
         }
