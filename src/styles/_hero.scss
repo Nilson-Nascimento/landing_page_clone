@@ -34,19 +34,6 @@
     &__content{
         // max-width: 640px;
         position: relative;
-        .opacity{
-            background-image: radial-gradient(farthest-side at 73% 21%,transparent,#1a1d29);
-            opacity: 0.5;
-            background-size: cover; //Ajusta/encaixa a imagem dentro do container
-            // background-image: url(https://placehold.jp/3d4070/ffffff/2160x1215.jpg?text=hero_Disney);
-            // background-color: rgb(255, 174, 0);
-            text-align: center;
-            /////////////////////////////////////////
-            position: relative;
-            padding: 75px calc(3.5vw + 24px) 0;
-            display: flex;
-            flex-direction: column;
-        }
         &__branding{
                 display: flex;
                 flex-wrap: wrap;

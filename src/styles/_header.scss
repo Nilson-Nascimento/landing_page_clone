@@ -25,9 +25,10 @@
     }
 
     &__container{
-        padding: 8px 36px;
+        padding: 4px 36px;
         display: flex;
         justify-content: space-between;
+        height: 65px;
 
         @media (max-width: 768px) {
             padding: 0 12px 0 20px;
